@@ -24,6 +24,10 @@
     display: block;
 }
 
+.header__navbar-item--has-notify:hover .header__notify {
+    display: block;
+}
+
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
@@ -130,11 +134,54 @@
     width: 404px;
     border: 1px solid #D3D3D3;
     background-color: var(--white-color);
+    cursor: default;
+    transform-origin: 90% top;
+    animation: headerNotifiGrowth ease-in 0.2s;
+    /* dành cho các trình duyệt
+    -webkit-animation: headerNotifiGrowth ease-in 0.2s;
+    -moz-animation: headerNotifiGrowth ease-in 0.2s;
+    -o-animation: headerNotifiGrowth ease-in 0.2s;
+    -moz-animation: headerNotifiGrowth ease-in 0.2s; */
+    will-change: opancity, transform;
+    display: none;
+}
+
+.header__notify::before {
+    content: "";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent; 
+    position: absolute;
+    right: 4px;
+    top: -29px;
+}
+
+.header__notify::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -16px;
+    width: 90px;
+    height: 20px;
+}
+
+@keyframes headerNotifiGrowth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .header__notify-header {
     height: 40px;
     background-color: var(--white-color);
+    user-select: none; /*ko chi nguoi dung copy*/
 }
 
 .header__notify-header h3 {
@@ -183,8 +230,9 @@
 .header__notify-name {
     display: block;
     font-size: 1.4rem;
-    color: var(--black-color);
+    color: var(--text-color);
     font-weight: 400;
+    line-height: 1.8rem;
 }
 
 .header__notify-description {
@@ -192,15 +240,19 @@
     font-size: 1.2rem;
     line-height: 1.6rem;
     color: #756F6E;
+    margin-top: 4px;
 }
 
 .header__notify-footer {
-    text-align: center;
+    display: flex;
 }
 
 .header__notify-footer-btn {
     text-decoration: none;
     color: var(--text-color);
-    padding: 16px;
-    
+    width: 100%;
+    padding: 8px 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: center;
 }
