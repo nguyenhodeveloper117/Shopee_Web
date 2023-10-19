@@ -3,6 +3,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -32,7 +33,6 @@ html {
 }
 
 /* Animation */
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -68,4 +68,20 @@ html {
     margin: auto;
     z-index: 1;
     border-radius: 5px;
+}
+
+/* Button styles */
+.btn {
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
 }
