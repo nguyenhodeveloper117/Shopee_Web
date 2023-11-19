@@ -36,7 +36,7 @@
 .header__navbar-user-name {
     font-size: 1.4rem;
     font-weight: 400;
-    margin-left: 8px;
+    margin-left: 4px;
 }
 
 .header__navbar-user-menu {
@@ -76,8 +76,8 @@
     display: block;
 }
 
-.header__navbar-user-item {
-
+.header__navbar-user-item--separate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header__navbar-user-item a {
@@ -116,7 +116,7 @@
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -154,6 +154,10 @@
 .header__navbar-icon-link {
     color: var(--white-color);
     text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+    margin-left: 3px;
 }
 
 .header__navbar-icon {
@@ -217,11 +221,12 @@
     top: 118%;
     right: 0;
     width: 404px;
-    border: 1px solid #D3D3D3;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--white-color);
     cursor: default;
-    transform-origin: 90% top;
+    transform-origin: calc(100% - 32px) top;
     animation: headerNotifiGrowth ease-in 0.2s;
+    border-radius: 2px;
     /* dành cho các trình duyệt
     -webkit-animation: headerNotifiGrowth ease-in 0.2s;
     -moz-animation: headerNotifiGrowth ease-in 0.2s;
@@ -229,7 +234,7 @@
     -moz-animation: headerNotifiGrowth ease-in 0.2s; */
     will-change: opancity, transform;
     display: none;
-    z-index: 3;
+    z-index: 1;
 }
 
 .header__notify::before {
@@ -486,6 +491,11 @@
     width: 200px;
 }
 
+.header__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
+
 .header__logo-img {
     width: 150px;
     color: var(--white-color);
@@ -563,7 +573,7 @@
 .header__search-option {
     position: absolute;
     right: 0;
-    top: 100%;
+    top: calc(100%-1px);
     width: 130x;
     list-style: none;
     box-shadow: 0 1px 2px #ccc;
