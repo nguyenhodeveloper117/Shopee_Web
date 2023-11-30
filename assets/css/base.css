@@ -37,6 +37,7 @@ html {
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
+    flex-flow: row;
 }
 
 .grid__column-2 {
@@ -111,10 +112,11 @@ html {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1.2;
+    background-color: var(--white-color);
 }
 
 .btn.btn--normal:hover {
