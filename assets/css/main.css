@@ -645,6 +645,7 @@
     border-radius: 2px;
     box-shadow: 0 1px 5px #c9c7c7;
     overflow: hidden;
+    z-index: 1;
     display: none;
 }
 
