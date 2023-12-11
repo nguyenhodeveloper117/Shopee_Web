@@ -998,3 +998,89 @@
 .home-filter__page-btn__disable .home-filter__page-icon {
     color: #ccc;
 }
+
+/* Product item */
+.home-product-item {
+    margin-top: 10px;
+    background-color: var(--white-color);
+}
+
+.home-product-item__img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-position: center;  */
+    /* Để cho ảnh vừa với khối chứa nó dùng background-size: contain, 
+    trong trường hợp ảnh dài quá thì dùng cover và thêm background position: center để nó về trọng tâm ảnh */
+}
+
+.home-product-item__name {
+    margin: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    height: 3.6rem;
+    overflow: hidden;
+    /* Tạo dấu ... */
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* trường hợp trình duyệt ko support */
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+
+}
+
+.home-product-item__price {
+
+}
+
+.home-product-item__price-old {
+
+}
+
+.home-product-item__price-current {
+
+}
+
+.home-product-item__action {
+
+}
+
+.home-product-item__like {
+
+}
+
+.home-product-item__rating {
+
+}
+
+.home-product-item__origin {
+
+}
+
+.home-product-item__brand {
+
+}
+
+.home-product-item__origin-name {
+
+}
+
+.home-product-item__favourit {
+
+}
+
+.home-product-item__sale-off {
+
+}
+
+.home-product-item__sale-off-percent {
+
+}
+
+.home-product-item__sale-off-label {
+
+}
