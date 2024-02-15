@@ -134,8 +134,12 @@
                     </ul>
                 </nav>
 
-                <!-- header with search -->
+                <!-- header with search -->               
                 <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+
                     <div class="header__logo hide-on-tablet">
                         <a href="#" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -147,6 +151,9 @@
                             </svg>
                         </a>
                     </div>
+
+                    <input type="checkbox" hidden class="header__search-checkbox" id="mobile-search-checkbox">
+
                     <div class="header__search">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
@@ -321,6 +328,20 @@
                     </div>
                 </div>
             </div>
+        <ul class="header__sort-bar">
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Liên quan</a>
+            </li>
+            <li class="header__sort-item header__sort-item--active">
+                <a href="" class="header__sort-link">Mới nhất</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Bán chạy</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Giá</a>
+            </li>
+        </ul>   
         </header>
 
         <!-- Product -->
