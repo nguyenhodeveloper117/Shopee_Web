@@ -38,6 +38,27 @@
         display: flex;
     }
 
+    .footer__chinhSach-list {
+        padding: 0;
+        margin: 0 4px;
+    }
+
+    .footer__chinhSach-list-item {
+        margin: 10px 0;
+    }
+
+    .footer__chinhSach-list-item a {
+        text-decoration: none;
+        color: rgba(0,0,0,.65);
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 0;
+        text-decoration: underline;
+    }
+
+    .footer__registered-img {
+        width: 100%;
+    }
 }
 
 /* tablet */
