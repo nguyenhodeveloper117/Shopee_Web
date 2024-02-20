@@ -495,6 +495,7 @@
 
 .header__mobile-search {
     padding: 0 12px;
+    display: none;
 }
 
 .header__mobile-search-icon {
@@ -1011,9 +1012,9 @@
 
 /* mobile category */
 
-/* .mobile-category {
-
-} */
+.mobile-category {
+    display: none;
+}
 
 .mobile-category__list {
     display: flex;
@@ -1060,6 +1061,7 @@
     -webkit-line-clamp: 2;
     border-radius: 4px;
     font-weight: 300;
+    padding: 0 6px;
     user-select: none;
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;

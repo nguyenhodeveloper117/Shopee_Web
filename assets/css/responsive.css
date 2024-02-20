@@ -38,6 +38,10 @@
         margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
     }
 
+    .mobile-category {
+        display: block;
+    }
+
     .header__sort-bar {
         display: flex;
     }
@@ -125,6 +129,14 @@
 
     .app__content {
         margin: 0 4px;
+    }
+
+    .header__mobile-search {
+        display: block;
+    }
+
+    .header__logo-img {
+        width: 110px;
     }
 
     @keyframes mobileSearchSideIn {
